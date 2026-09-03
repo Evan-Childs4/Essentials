@@ -22,6 +22,9 @@ public class MySimpleCharacterController : MonoBehaviour
     private Transform thisTransform;
     private int jumpCount = 0;
     private int maxJumps = 2;
+
+    public Camera MainCamera;
+    public Camera FocusCamera;
     //add a roll to the character controller
    
     
@@ -61,6 +64,12 @@ public class MySimpleCharacterController : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
             jumpCount++;
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            FocusCamera.enabled = !FocusCamera.enabled;
+            FocusCamera.enabled = !FocusCamera.enabled;
         }
     }
 
