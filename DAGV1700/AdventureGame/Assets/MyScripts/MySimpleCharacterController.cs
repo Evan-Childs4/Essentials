@@ -36,6 +36,9 @@ public class MySimpleCharacterController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         thisTransform = transform;
+
+        MainCamera.enabled = true;
+        FocusCamera.enabled = false;
     }
 
     /// <summary>
@@ -47,6 +50,12 @@ public class MySimpleCharacterController : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
         ApplyGravity();
         KeepCharacterOnXAxis();
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            MainCamera.enabled = !MainCamera.enabled;
+            FocusCamera.enabled = !FocusCamera.enabled;
+        }
     }
 
     /// <summary>
@@ -64,12 +73,6 @@ public class MySimpleCharacterController : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
             jumpCount++;
-        }
-
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            MainCamera.enabled = !MainCamera.enabled;
-            FocusCamera.enabled = !FocusCamera.enabled;
         }
     }
 
