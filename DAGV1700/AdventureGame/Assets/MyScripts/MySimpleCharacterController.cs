@@ -68,7 +68,7 @@ public class MySimpleCharacterController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.C))
         {
-            FocusCamera.enabled = !FocusCamera.enabled;
+            MainCamera.enabled = !MainCamera.enabled;
             FocusCamera.enabled = !FocusCamera.enabled;
         }
     }
