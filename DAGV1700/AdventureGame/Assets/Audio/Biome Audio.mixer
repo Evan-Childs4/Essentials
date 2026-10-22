@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-3791841982160562234
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grassy Biome Group
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 0fead73510adc104384bb5d973cad248
+  m_Children: []
+  m_Volume: 9032a4d6bd772b0419f1c980d60d07c9
+  m_Pitch: 7d6cadc2a66bf3b4a868caf8eeaf275b
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -498933926791667063}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-683826890182278679
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 7cd352105335df247ac4c9449ee20d83
+  m_EffectName: Attenuation
+  m_MixLevel: 29b8cc965b8a0024d9485a3125671e10
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &-498933926791667063
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: fb62a665ab2c78a44a53dca71a38dba3
+  m_EffectName: Attenuation
+  m_MixLevel: 209441b95b40a7b4ca9d20c1750cbcda
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Biome Audio
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  - {fileID: 2760893500714673059}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - fa2b4632feb4df94aa6d75bb24d23f6d
+    - cf3a9b18b5ad7494db8ce0bdab9fb4cd
+    - 0fead73510adc104384bb5d973cad248
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: fa2b4632feb4df94aa6d75bb24d23f6d
+  m_Children:
+  - {fileID: -3791841982160562234}
+  - {fileID: 4422280496049700517}
+  m_Volume: be4977620beb145408a8aadb87013c5d
+  m_Pitch: b02bd795d70a5404bab33c2b30c33e50
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 166392d5fde5a6a4db841188f2095ca0
+  m_EffectName: Attenuation
+  m_MixLevel: 87c810f009b6f324e96ffde7e4843790
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Inside Biome Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 5410ad992c92df54fa31e293c5a69928
+  m_FloatValues:
+    9032a4d6bd772b0419f1c980d60d07c9: -80
+  m_TransitionOverrides: {}
+--- !u!245 &2760893500714673059
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grassy Biome Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: ff937b034385ecf4c90626e5e6fe1b0c
+  m_FloatValues:
+    2983a58056915244ab04d7673a325fa1: -80
+  m_TransitionOverrides: {}
+--- !u!243 &4422280496049700517
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Inside Biome Group
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: cf3a9b18b5ad7494db8ce0bdab9fb4cd
+  m_Children: []
+  m_Volume: 2983a58056915244ab04d7673a325fa1
+  m_Pitch: d77c12a2d2333d24294e7cbd9de3f06e
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -683826890182278679}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
